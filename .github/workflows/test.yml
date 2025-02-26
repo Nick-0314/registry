@@ -1,0 +1,13 @@
+name: test
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+    - name: setup tmate
+      uses: mxschmitt/action-tmate@v3 
